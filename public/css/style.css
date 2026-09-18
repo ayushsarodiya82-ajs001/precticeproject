@@ -1,0 +1,17 @@
+
+/*navbar*/
+.navbar{
+height:5rem;
+background-color: antiquewhite
+}
+
+.fa-solid.fa-solid.fa-up-down-left-right{
+  color: chartreuse;
+  font-size: 2rem;
+}
+
+.nav-link {
+color:blue !important;
+
+
+}
