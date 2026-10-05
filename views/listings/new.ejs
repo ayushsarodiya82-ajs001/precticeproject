@@ -4,40 +4,46 @@
 <body>
   <br><br>
   <h3>create a new listing</h3>
-  <form method="POST" action="/listings">
+  <form method="POST" action="/listings" novalidate class="needs-validation">
     <div class="mb-3">
     <label for="title" class="form-label">Title</label>
     <input name="listing[title]" 
     placeholder="add a good title" 
     type="text"
-     class="form-control">
+     class="form-control"
+     required>
+     <div class="valid-feedback">title looks good!</div>
     </div>
     <br>
     <div  class="mb-3">
     <label for="discription" class="form-label">Discription</label>
-    <textarea name="listing[description]" class="form-control" ></textarea>
+    <textarea name="listing[description]" class="form-control" required ></textarea>
+    <div class="invalid-feedback">enter short and sweet diss.</div>
     </div>
     <br>
     <div  class="mb-3">
       <label for="image" class="form-label">IMG link</label>
-     <input name="listing[image]" placeholder="enter img URL/link" type="text" class="form-control">
+     <input name="listing[image]" placeholder="enter img URL/link" type="text" class="form-control" required>
      </div>
     <br>
     <div class="row">
     <div class="mb-3 col-md-4">
       <label for="price" class="form-label">Price</label>
-     <input name="listing[price]" placeholder="enter price" type="number" class="form-control">
+     <input name="listing[price]" placeholder="enter price" class="form-control" required>
+     <div class="invalid-feedback">please a valid amount</div>
      </div>
     <br>
     <div class="mb-3 col-md-8">
       <label for="country" class="form-label">Country</label>
-     <input name="listing[country]" placeholder="enter country" type="text" class="form-control">
+     <input name="listing[country]" placeholder="enter country" type="text" class="form-control" required>
+     <div class="invalid-feedback">please enter correct place</div>
      </div>
      </div>
     <br>
     <div  class="mb-3">
       <label for="location" class="form-label">Location</label>
-     <input name="listing[location]" placeholder="enter location" type="text" class="form-control">
+     <input name="listing[location]" placeholder="enter location" type="text" class="form-control" required>
+     <div class="invalid-feedback">fav. location?</div>
      </div>
     <br>
     <button class="btn btn-dark">save!</button> 

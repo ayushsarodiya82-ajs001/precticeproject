@@ -61,7 +61,7 @@ f-info-socials i {
 }
 
 /*cards*/
-.card{
+.listing-card {
   border: none;
   margin-bottom: 2rem;
    row-gap: 30px;
@@ -94,10 +94,6 @@ f-info-socials i {
   opacity: 2.5;
 }
 
-/*edit pg!!*/
-.edit-btn{
-
-}
 
 /*show  pg!!*/
 .show-img{
